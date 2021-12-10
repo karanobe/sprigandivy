@@ -29,10 +29,10 @@
 /* ======= Font Settings ======== */
 /* Google Fonts: Old Standard TT & Nunito Sans) */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-/*  Custom Font: Signatie  */
+/*  Custom Font: BrittanySignature  */
 @font-face {
-    font-family: 'Signatie';
-    src: url('../fonts/Signatie.ttf') format('truetype');
+    font-family: 'BrittanySignature';
+    src: url('../fonts/BrittanySignature.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -380,7 +380,7 @@ display: block;
     transition: all 0.3s ease-out;
 }
 .navbar-brand h2 {
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-weight: normal;
     font-size: 30px;
     color: #000;
@@ -634,7 +634,7 @@ display: block;
     font-weight: normal;
     color: #000;
     padding: 0;
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     margin-bottom: 10px;
 }
 
@@ -671,7 +671,7 @@ display: block;
 
 
 .bethany-homepage-slider .signature {
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-size: 35px;
     font-weight: normal;
     font-style: normal;
@@ -689,7 +689,7 @@ display: block;
 }
 .banner-header h1 {
     font-size: 45px;
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-weight: normal;
     color: #fff;
     position: relative;
@@ -776,13 +776,13 @@ hr {
     right: 15px;
     z-index: 3;
     color: #000;
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-weight: normal;
     letter-spacing: 1px;
     font-size: 30px;
     line-height: 1.5em;
     text-align: center;
-    transform: rotate(-30deg);
+    transform: rotate(-15deg);
 }
 
 
@@ -803,7 +803,7 @@ hr {
     padding-right: 20px;
 }
 .wedding-date-table p {
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-size: 25px;
     color: #505050;
     margin-bottom: 4px;
@@ -1110,7 +1110,7 @@ width: 100px;
     font-weight: normal;
     color: #000;
     padding: 0;
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     margin-bottom: 10px;
 }
 .services-container {
@@ -1780,7 +1780,7 @@ width: 100px;
    color: #fff;
 }
 .main-footer .logo h2 {
-    font-family: 'Signatie';
+    font-family: 'BrittanySignature';
     font-weight: normal;
     font-size: 30px;
     color: #fff;
