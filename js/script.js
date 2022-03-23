@@ -4,14 +4,12 @@
         init: function () {
             this.cacheDom();
             this.bindEvents();
-            this.initSlider();
             this.totopButton();
             this.enablePopupGallery();
         }
         , cacheDom: function () {
             this.toTop = $('.totop');
             this._body = $('body');
-            this.bethanyHomepageSlider = $('.bethany-slider');
             this.bethanyGalleryTabs = $('.bethany-toolbar-item');
         }
         , bindEvents: function () {
@@ -41,31 +39,6 @@
                 });
             }
         }
-        
-        , /* slider */
-        initSlider: function () {
-            var self = this;
-            /* homepage slider */
-            self.bethanyHomepageSlider.slick({
-                infinite: true
-                , dots: false
-                , autoplay: true
-                , speed: 3000
-                , arrows: true
-                , slidesToShow: 3
-                , slidesToScroll: 3
-                , responsive: [
-                    {
-                        breakpoint: 768
-                        , settings: {
-                            slidesToShow: 1
-                            , slidesToScroll: 1
-                        }
-			}
-			]
-            });
-        }
-        
 
         , /* ======= toTop ======= */
         totopButton: function() {
@@ -157,8 +130,7 @@
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 1
                 }
             }
         ]
@@ -262,3 +234,38 @@
     $("a.vid").YouTubePopUp();
     ARC.init();
 })();
+
+
+// Contact Form
+    var form = $('.contact__form'),
+        message = $('.contact__msg'),
+        form_data;
+    // success function
+    function done_func(response) {
+        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+        message.text(response);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+        form.find('input:not([type="submit"]), textarea').val('');
+    }
+    // fail function
+    function fail_func(data) {
+        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.text(data.responseText);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+    }
+    form.submit(function (e) {
+        e.preventDefault();
+        form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: form_data
+        })
+        .done(done_func)
+        .fail(fail_func);
+    });
+    
