@@ -1228,11 +1228,13 @@ width: 100px;
 /* ===== Team styles ===== */
 .team .item {
     position: relative;
+    max-width: 300px;
+    margin: auto !important;
     width: 100%;
     padding: 0;
     margin: 0;
-    float: left;
-    box-sizing: border-box
+    /* float: left; */
+    box-sizing: border-box;
 }
 .team .item-inner {
     position: relative;
@@ -1382,7 +1384,15 @@ width: 100px;
     -webkit-transition: all .4s;
     transition: all .4s;
     margin: 10px 0;
+    min-height: 560px;
+    border: 1px solid #f7f4f1;
 }
+
+.price-alt .item {
+    min-height: unset;
+    background: #faf7f5;
+}
+
 .price .item .type {
     position: relative;
     border-bottom: 1px solid #eee;
@@ -1401,6 +1411,11 @@ width: 100px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.price-alt .item .type:after {
+    background: #faf7f5;
+}
+
 .price .item .type h6 {
     position: relative;
     color: #000;
@@ -1855,6 +1870,9 @@ width: 100px;
     text-transform: uppercase;
     letter-spacing: 2px;
     outline: none;
+}
+a.bethany-btn2 {
+    padding: 12px 27px;
 }
 .bethany-btn2:after {
     content: '';
