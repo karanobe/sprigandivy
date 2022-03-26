@@ -1300,6 +1300,15 @@ width: 100px;
 .bethany-services-section {
     margin-top: 160px;
 }
+
+.bethany-services-section ul li::before {
+  content: "\2022";
+  /*padding-right: 15px;*/
+  color: #a2783a;
+}
+.bethany-services-section ul li span {
+  padding-left: 15px;
+}
 .services-item {
     position: relative;
     outline: none;
