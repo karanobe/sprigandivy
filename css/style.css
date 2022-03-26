@@ -1992,7 +1992,7 @@ width: 100px;
     color: #fff;
     margin-right: 3px;
 }
-.main-footer .usful-links ul li a {
+.main-footer .usful-links ul li a, .main-footer .fotcont a {
     color: #fff;
 }
 .main-footer .fothead h6 {
